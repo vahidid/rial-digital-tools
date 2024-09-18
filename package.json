@@ -1,0 +1,17 @@
+{
+  "name": "rial-digital-tools",
+  "version": "1.0.0",
+  "description": "Mini tools for RialDigital Network",
+  "private": false,
+  "scripts": {
+    "build": "rslib build"
+  },
+  "author": "Vahid Hasani",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "@rslib/core": "^0.0.6"
+  }
+}
