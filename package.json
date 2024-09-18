@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Mini tools for RialDigital Network",
   "private": false,
+  "main": "dist/index.js",
   "scripts": {
     "build": "rslib build"
   },
   "author": "Vahid Hasani",
   "license": "ISC",
   "peerDependencies": {
-    "react": "*"
+    "bignumber.js": "*"
   },
   "dependencies": {
     "@rslib/core": "^0.0.6"

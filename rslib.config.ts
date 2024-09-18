@@ -5,6 +5,9 @@ const shared = {
 };
 
 export default defineConfig({
+  dev: {
+    lazyCompilation: true,
+  },
   lib: [
     {
       ...shared,
