@@ -9,7 +9,6 @@ import (
 	"encoding/base64"
 	"encoding/pem"
 	"fmt"
-	"syscall/js"
 )
 
 const (
@@ -30,19 +29,19 @@ type (
 func main() {
 
 	fmt.Println("Start using WASM")
-	js.Global().Set("generateKey", keysWrapper())
+	// js.Global().Set("generateKey", keysWrapper())
 
-	<-make(chan struct{})
+	// <-make(chan struct{})
 }
 
-func keysWrapper() js.Func {
-	function := js.FuncOf(func(this js.Value, _ []js.Value) any {
-		generateKeys()
+// func keysWrapper() js.Func {
+// 	function := js.FuncOf(func(this js.Value, _ []js.Value) any {
+// 		generateKeys()
 
-		return "complete"
-	})
-	return function
-}
+// 		return "complete"
+// 	})
+// 	return function
+// }
 
 func generateKeys() GenerateKeyResponse {
 	privateKey, err := rsa.GenerateKey(rand.Reader, KEY_BITS)
