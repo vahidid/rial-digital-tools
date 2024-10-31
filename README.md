@@ -1,23 +1,5 @@
-# Rslib Project
+This is a simple library to help you using common concept in Rial Digital projects.
 
-## Setup
+This library is using simple classes for generating RAPSA path format.
 
-Install the dependencies:
-
-```bash
-pnpm install
-```
-
-## Get Started
-
-Build the library:
-
-```bash
-pnpm build
-```
-
-Build the library in watch mode:
-
-```bash
-pnpm build --watch
-```
+I use rapsa-js for RAPSA generator, Thanks to Hossein.
