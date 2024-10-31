@@ -1,5 +1,5 @@
 import Banks from './../banks.json';
-import BaseConverter from './baseConverter.ts';
+import { base10ToBase62, base62ToBase10 } from './baseConverter';
 /**
  * Class representing a Card Number.
  */

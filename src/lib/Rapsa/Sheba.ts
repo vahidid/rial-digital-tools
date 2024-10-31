@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 import Banks from './../banks.json';
-import BaseConverter from './baseConverter.ts';
+import { base10ToBase62, base62ToBase10 } from './baseConverter';
 /**
 
 /**
