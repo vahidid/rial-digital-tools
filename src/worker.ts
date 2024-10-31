@@ -13,9 +13,9 @@ WebAssembly.instantiateStreaming(fetch('./go/wasm.wasm'), go.importObject)
   });
 
 // biome-ignore lint/suspicious/noGlobalAssign: <explanation>
-onmessage = ({ data }) => {
+self.onmessage = ({ data }) => {
   const { action, payload } = data;
-  postMessage({
+  self.postMessage({
     action: 'log',
     payload: `Worker received message ${action}: ${payload}`,
   });
@@ -23,7 +23,7 @@ onmessage = ({ data }) => {
     case 'calculate':
       console.log('calculate exec');
       // const result = calcHarmonic(payload);
-      postMessage({ action: 'result', payload: 'response' });
+      self.postMessage({ action: 'result', payload: 'response' });
       break;
     default:
       throw `unknown action '${action}'`;

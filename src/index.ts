@@ -1,5 +1,8 @@
+
+const worker = new Worker(new URL('./worker.ts', import.meta.url));
+
 export function example(): string {
-  const worker = new Worker('worker.ts');
+
   worker.onmessage = ({ data }) => {
     const { action, payload } = data;
     switch (action) {
