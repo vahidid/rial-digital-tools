@@ -23,8 +23,15 @@
   },
   "linter": {
     "enabled": true,
+    "ignore": ["example/**/*"],
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
     }
   }
 }
