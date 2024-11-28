@@ -30,6 +30,7 @@
   },
   "private": false,
   "dependencies": {
+    "@rsbuild/core": "^1.1.6",
     "bignumber.js": "^9.1.2"
   }
 }
